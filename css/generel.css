@@ -1,0 +1,114 @@
+body {
+  background-color: white;
+  font-family: "Roboto", sans-serif;
+  color: black;
+}
+
+a {
+  color: inherit; /* arver farven fra omkringliggende tekst */
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+/* nav mobil */
+
+.nav_points {
+  display: flex;
+  justify-content: space-between; /* logo til venstre, menu/burger til højre */
+  align-items: center; /* vigtig: vertikalt centreret på samme linje */
+  padding: 10px 20px;
+  background-color: #fff;
+  flex-wrap: nowrap; /* sikrer, at børn ikke rykkes ned */
+}
+
+.burger {
+  display: flex; /* Flex for at stable linjerne */
+  flex-direction: column; /* lodret stabling */
+  gap: 5px; /* mellemrum mellem linjerne */
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.burger .line {
+  display: block;
+  width: 25px; /* bredde på linjerne */
+  height: 3px; /* tykkelse */
+  background-color: #000; /* sort farve */
+  border-radius: 2px; /* valgfrit, bløde kanter */
+}
+
+.menu {
+  display: none;
+  list-style: none;
+}
+
+.logo_white_index {
+  width: 20%;
+  margin-left: 2em;
+  margin-top: 1em;
+}
+
+@media (width>=850px) {
+  .menu {
+    display: flex;
+    gap: 40px;
+  }
+
+  .nav_points {
+    display: flex; /* Flex container */
+    justify-content: space-between; /* logo til venstre, menu + burger til højre */
+    align-items: center; /* vertikal centering */
+    padding: 10px 20px;
+    background-color: #fff; /* valgfri baggrund */
+    position: relative;
+    font-size: 1.2em;
+    margin-right: 2em;
+  }
+
+  /* hover effekt på nav */
+
+  .menu li #book_a_call {
+    background-color: #000000; /* black background */
+    color: white; /* tekst color */
+    border-radius: 30px; /* valgfrit, for afrundede kanter */
+    padding: 5px 20px;
+  }
+  .menu li #book_a_call:hover {
+    background-color: rgba(
+      215,
+      190,
+      133,
+      1
+    ); /* eksempel: lilla baggrund ved hover */
+    color: #000000; /* evt. ændre tekstfarve, hvis du vil */
+  }
+  .menu li :hover {
+    color: rgba(215, 190, 133, 1);
+  }
+
+  /* navigtion */
+
+  .logo_white_index {
+    width: 25%;
+    margin-left: 2em;
+    margin-top: 1em;
+  }
+
+  /* font */
+  .roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500; /* Medium */
+    font-style: normal;
+    font-variation-settings: "wdth" 100; /* standard bredde */
+  }
+
+  .burger {
+    display: none;
+  }
+}
