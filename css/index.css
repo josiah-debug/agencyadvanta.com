@@ -1,33 +1,29 @@
-.forside_grid1 {
-  display: flex;
-  margin-left: 2em;
-  margin-top: 4em;
-}
-
 .quote_1 {
   border-radius: 15px; /* valgfrit, for afrundede kanter */
   width: fit-content;
-  padding: 10px 20px;
+  padding: 15px 10px;
   background-color: #ffffff; /* black background */
   color: rgb(0, 0, 0); /* tekst color */
   font-weight: 800;
   margin-bottom: 1.5em;
-  margin-left: 0;
-  font-size: 16px;
+  font-size: 10px;
   filter: drop-shadow(4px 4px 6px rgb(144, 139, 139));
 }
 
 #quote1_id {
   margin-bottom: 2.5em;
-  margin-left: -1em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .top_part_content {
   margin-left: 3em;
+  text-align: center;
 }
 
 .josiah_img {
   width: 30%;
+  height: 20%;
   margin-right: 2em;
   margin-left: 8em;
   border-radius: 5px;
@@ -147,7 +143,7 @@ h3 {
 
 .calendly {
   margin-top: 2em;
-  width: 60%;
+  width: 20%;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -162,18 +158,17 @@ h4 {
 }
 
 .svg_pictures {
-  display: flex;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
-  gap: 7em; /* luft mellem logoerne */
+  gap: 0em; /* luft mellem logoerne */
   width: 40%;
   margin: 3em auto 1em;
   margin-bottom: 8em;
 }
 
 .svg {
-  width: 80px; /* vælg den størrelse du vil have */
+  width: 80%; /* vælg den størrelse du vil have */
   height: 80px;
   object-fit: contain; /* hele ikonet vises uden at blive beskåret */
   display: block;
@@ -181,7 +176,7 @@ h4 {
 }
 
 .svg_pictures > div {
-  width: 160px; /* samme bredde for alle */
+  width: 90%; /* samme bredde for alle */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -204,34 +199,23 @@ h4 {
 }
 
 .svg_tekst {
-  font-size: 16px;
-  margin-left: 0;
-  margin-right: 0;
+  font-size: 10px;
   text-align: center;
-  width: 70%;
+  width: 100%;
   font-weight: 400;
   line-height: 20px;
   margin-bottom: 5em;
-  margin-top: -9em;
-}
-
-.svg_tekst_grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  margin-left: 3em;
-  margin-right: 0em;
   gap: 2em;
 }
 
 #aftaler {
   margin-right: 2em;
-  margin-left: 1em;
+  margin-left: 2em;
   white-space: nowrap;
   margin-top: 2em;
   border-radius: 30px; /* valgfrit, for afrundede kanter */
   border: 1px solid black;
-  padding: 10px 40px;
+  padding: 5px 10px;
   background-color: #000000; /* black background */
   color: rgb(255, 255, 255); /* tekst color */
 }
@@ -242,17 +226,18 @@ h4 {
   margin-top: 2em;
   border-radius: 30px; /* valgfrit, for afrundede kanter */
   border: 1px solid black;
-  padding: 10px 70px;
+  padding: 5px 10px;
   background-color: #000000; /* black background */
   color: rgb(255, 255, 255); /* tekst color */
 }
 
 .founder {
   white-space: nowrap;
+  margin-left: 2em;
   margin-top: 2em;
   border-radius: 30px; /* valgfrit, for afrundede kanter */
   border: 1px solid black;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: #000000; /* black background */
   color: rgb(255, 255, 255); /* tekst color */
 }
@@ -282,11 +267,11 @@ h4 {
 }
 
 .tekst_footer {
-  margin-left: 2em;
+  margin-left: 3em;
   width: 50%;
   line-height: 40px;
   display: flex;
-  font-size: 0.92em;
+  font-size: 0.7em;
 }
 
 .footer_content {
@@ -305,7 +290,7 @@ h4 {
   margin-left: 2em;
   margin-right: 2em;
   margin-bottom: 4em;
-  margin-top: 2em;
+  margin-top: 3em;
 }
 
 .footer_menu {
@@ -385,6 +370,14 @@ h4 {
   /* forside del 5 */
 
   /* forside del 6 */
+  .forside_del6_mobile {
+    display: none;
+  }
+
+  .svg_tekst_grid_mobile {
+    display: none;
+  }
+
   h4 {
     font-size: 40px;
     margin-bottom: 2.5em;
@@ -399,7 +392,13 @@ h4 {
   }
 
   .svg_pictures {
-    gap: 200px; /* Juster tallet for mere/mindre afstand */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    gap: 160px; /* luft mellem logoerne */
+    width: 40%;
+    margin: 3em auto 1em;
     margin-bottom: 1em;
   }
 
@@ -477,5 +476,15 @@ h4 {
     margin: 0; /* fjern margin */
     font-size: 20px;
     font-weight: 450;
+  }
+}
+
+@media (max-width: 768px) {
+  .svg_tekst_grid {
+    display: none;
+  }
+
+  .forside_del6 {
+    display: none;
   }
 }
