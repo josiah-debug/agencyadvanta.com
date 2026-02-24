@@ -1,6 +1,6 @@
 .p1_aboutus {
   border-radius: 15px; /* valgfrit, for afrundede kanter */
-  border: 1px solid black;
+
   width: fit-content;
   padding: 10px 20px;
   background-color: #ffffff; /* black background */
@@ -10,14 +10,16 @@
   font-size: 16px;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
   display: block;
-  margin-left: 3em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 7em;
 }
 
 .h1_ab {
-  margin-left: 1.2em;
-  margin-top: 1.7em;
+  text-align: center;
+  margin-top: 1.5em;
   font-size: 40px;
+  margin-bottom: 1em;
 }
 
 .josiah_img {
@@ -31,7 +33,19 @@
 }
 
 .p_grid1 {
-  margin-left: 3.2em;
+  position: relative;
+  margin-bottom: 0.5em;
+  text-align: center; /* teksten centreres som ønsket */
+}
+
+/* Prikken tæt på teksten uden at skubbe teksten */
+.p_grid1::before {
+  content: "•";
+  display: inline-block; /* gør prikken inline med teksten */
+  margin-right: 0.3em; /* afstand mellem prik og tekst */
+  color: black;
+  font-size: 1em;
+  vertical-align: middle; /* centrerer prikken med teksten */
 }
 
 #link_yt {
@@ -40,11 +54,13 @@
   color: white; /* tekst color */
   border-radius: 30px; /* valgfrit, for afrundede kanter */
   padding: 10px 17px;
-  margin-left: 3.5em;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 3em;
   font-size: 14px;
-  width: 32%;
+  width: 60%;
   font-size: 15px;
+  white-space: nowrap;
 }
 
 #link_yt:hover {
@@ -60,13 +76,16 @@
 .h1_2 {
   margin-top: 4em;
   margin-left: 1em;
-  font-size: 50px;
+  font-size: 27px;
   font-weight: 500;
+  width: 70%;
+  white-space: nowrap;
 }
 
 .p_2 {
-  margin-left: 3em;
+  margin-left: 1.6em;
   font-size: 17px;
+  margin-bottom: 3em;
 }
 
 /* drop down boks pil */
@@ -164,6 +183,13 @@ details[open] summary::after {
     margin-left: 4em;
     font-size: 25px;
     margin-top: 1em;
+  }
+
+  .h1_2 {
+    margin-top: 4em;
+    margin-left: 1em;
+    font-size: 50px;
+    font-weight: 500;
   }
 
   .grid2_ab {
