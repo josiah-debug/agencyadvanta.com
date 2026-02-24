@@ -308,11 +308,10 @@
   color: #000000; /* evt. ændre tekstfarve, hvis du vil */
 }
 
-@media (width>=850px) {
+@media (min-width: 850px) {
   .clientcase-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
   }
 
   .clientcase_grid2 {
