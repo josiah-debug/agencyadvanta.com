@@ -1,10 +1,3 @@
-.grid_ab {
-  display: grid;
-  grid-template-columns: 1.7fr 1fr;
-  grid-template-rows: 1fr;
-  margin-right: 2em;
-}
-
 .p1_aboutus {
   border-radius: 15px; /* valgfrit, for afrundede kanter */
   border: 1px solid black;
@@ -28,10 +21,11 @@
 }
 
 .josiah_img {
-  grid-column: 2/3;
-  grid-row: 1;
-  width: 100%;
+  width: 60%;
   margin-top: 7em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border-radius: 5px;
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
 }
@@ -123,6 +117,12 @@ details[open] summary::after {
 }
 
 @media (width>=850px) {
+  .grid_ab {
+    display: grid;
+    grid-template-columns: 1.7fr 1fr;
+    grid-template-rows: 1fr;
+    margin-right: 2em;
+  }
   .p1_aboutus {
     border-radius: 15px; /* valgfrit, for afrundede kanter */
     border: 1px solid black;
