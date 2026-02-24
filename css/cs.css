@@ -21,8 +21,7 @@
 
 /* youtube videos */
 .clientcase-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
 }
 
@@ -197,13 +196,6 @@
   filter: drop-shadow(4px 4px 6px rgba(0, 0, 0, 0.25));
 }
 
-.clientcase_grid2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  margin-bottom: 5em;
-}
-
 .review1 {
   grid-column: 1/2;
   width: 90%;
@@ -321,6 +313,19 @@
 }
 
 @media (width>=850px) {
+  .clientcase-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+
+  .clientcase_grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    margin-bottom: 5em;
+  }
+
   .testimonials {
     border-radius: 20px; /* valgfrit, for afrundede kanter */
     width: fit-content;
